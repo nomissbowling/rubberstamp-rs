@@ -1,0 +1,2 @@
+# rubberstamp-rs
+RubberStamp
