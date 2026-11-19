@@ -1,0 +1,30 @@
+[package]
+name = "rubberstamp"
+version = "0.0.1" # change with html_root_url in lib.rs
+edition = "2024"
+authors = ["nomissbowling <nomissbowling@yahoo.co.jp>"]
+
+description = "rubberstamp"
+keywords = ["cargo", "crate", "crates", "pyo3", "tempita"]
+categories = ["command-line-utilities", "development-tools", "external-ffi-bindings"]
+license = "MIT"
+
+documentation = "https://docs.rs/rubberstamp/"
+homepage = "https://crates.io/crates/rubberstamp"
+repository = "https://github.com/nomissbowling/rubberstamp-rs"
+
+readme = "README.md"
+
+#build = "build.rs"
+
+[lib]
+name = "rubberstamp"
+
+[dependencies]
+pyo3 = { version = "=0.30.1", features = ["auto-initialize"] }
+
+thiserror = { version = "=2.0.20" }
+anyhow = { version = "=1.0.104" }
+
+[package.metadata.docs.rs]
+rustc-args = ["--cfg", "docsrs"]
