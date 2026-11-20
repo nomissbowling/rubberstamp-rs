@@ -1,5 +1,12 @@
 //! rubberstamp
 //!
+//! Cargo test with [-- --nocapture] or with [-- --show-output]
+//!
+//! cargo test --bin rubberstamp --release -- --nocapture
+//! cargo test --bin rubberstamp --release -- --show-output
+//! cargo run --bin rubberstamp --release
+//! cargo build --bin rubberstamp --release
+//!
 
 use rubberstamp::core::*;
 
@@ -27,8 +34,8 @@ mod tests {
   /// test rubberstamp
   #[test]
   fn test_rubberstamp() -> Result<(), Box<dyn Error>> {
-    assert_eq!(rubberstamp_test()?, ());
     assert_eq!(py_test()?, ()); // same as lib
+    assert_eq!(rubberstamp_test()?, ());
     Ok(())
   }
 }

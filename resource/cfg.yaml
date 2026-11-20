@@ -1,0 +1,5 @@
+act: nomissbowling
+proj: rubberstamp-rs
+crate: rubberstamp
+description: RubberStamp
+license: MIT
