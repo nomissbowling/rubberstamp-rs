@@ -1,5 +1,10 @@
+signingkey: ********
+base_dir: /c/prj/rust
+email: nomissbowling@yahoo.co.jp
 act: nomissbowling
 proj: rubberstamp-rs
 crate: rubberstamp
 description: RubberStamp
+keywords: ["cargo", "crate", "crates", "pyo3", "tempita"]
+categories: ["command-line-utilities", "development-tools", "external-ffi-bindings"]
 license: MIT

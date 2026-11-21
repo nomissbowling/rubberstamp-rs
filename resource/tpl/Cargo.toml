@@ -1,0 +1,39 @@
+[package]
+name = "{{crate}}"
+version = "0.0.1" # change with html_root_url in lib.rs
+edition = "2024"
+authors = ["{{act}} <{{email}}>"]
+
+description = "{{description}}"
+keywords = {{keywords}}
+categories = {{categories}}
+license = "{{license}}"
+
+documentation = "https://docs.rs/{{crate}}/"
+homepage = "https://crates.io/crates/{{crate}}"
+repository = "https://github.com/{{act}}/{{proj}}"
+
+readme = "README.md"
+
+#build = "build.rs"
+
+[lib]
+name = "{{crate}}"
+
+[dependencies]
+yaml = { version = "=0.12.0", package = "yaml-rust2" }
+pyo3 = { version = "=0.30.1", features = ["auto-initialize"] }
+
+thiserror = { version = "=2.0.20" }
+anyhow = { version = "=1.0.104" }
+
+[package.metadata.docs.rs]
+rustc-args = ["--cfg", "docsrs"]
+# all-features = false
+# features = ["python", "pyo3/abi3-py314"]
+features = ["pyo3/abi3-py314"]
+# targets = ["x86_64-unknown-linux-gnu"]
+
+### test before cargo publish
+# PYO3_NO_PYTHON=1
+# RUSTDOCFLAGS="--cfg docsrs" cargo +nightly doc --no-deps --all-features

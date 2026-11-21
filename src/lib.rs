@@ -1,10 +1,10 @@
-#![doc(html_root_url = "https://docs.rs/rubberstamp/0.0.2")]
+#![doc(html_root_url = "https://docs.rs/rubberstamp/0.0.3")]
 //! rubberstamp
 //!
 //! Cargo test with [-- --nocapture] or with [-- --show-output]
 //!
-//! cargo test --release -- --nocapture
-//! cargo test --release -- --show-output
+//! - cargo test --release -- --nocapture
+//! - cargo test --release -- --show-output
 //!
 
 pub mod core;

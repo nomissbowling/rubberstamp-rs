@@ -2,10 +2,10 @@
 //!
 //! Cargo test with [-- --nocapture] or with [-- --show-output]
 //!
-//! cargo test --bin rubberstamp --release -- --nocapture
-//! cargo test --bin rubberstamp --release -- --show-output
-//! cargo run --bin rubberstamp --release
-//! cargo build --bin rubberstamp --release
+//! - cargo test --bin rubberstamp --release -- --nocapture
+//! - cargo test --bin rubberstamp --release -- --show-output
+//! - cargo run --bin rubberstamp --release
+//! - cargo build --bin rubberstamp --release
 //!
 
 use rubberstamp::core::*;

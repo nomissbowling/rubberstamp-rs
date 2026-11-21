@@ -1,6 +1,6 @@
 [package]
 name = "rubberstamp"
-version = "0.0.2" # change with html_root_url in lib.rs
+version = "0.0.3" # change with html_root_url in lib.rs
 edition = "2024"
 authors = ["nomissbowling <nomissbowling@yahoo.co.jp>"]
 
@@ -29,3 +29,11 @@ anyhow = { version = "=1.0.104" }
 
 [package.metadata.docs.rs]
 rustc-args = ["--cfg", "docsrs"]
+# all-features = false
+# features = ["python", "pyo3/abi3-py314"]
+features = ["pyo3/abi3-py314"]
+# targets = ["x86_64-unknown-linux-gnu"]
+
+### test before cargo publish
+# PYO3_NO_PYTHON=1
+# RUSTDOCFLAGS="--cfg docsrs" cargo +nightly doc --no-deps --all-features

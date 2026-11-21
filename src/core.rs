@@ -62,11 +62,8 @@ pub fn tempita_substitute_test() -> Result<(), Box<dyn Error>> {
 
 /// lib_test
 pub fn lib_test() -> Result<(), Box<dyn Error>> {
-  assert_eq!((), ());
-/* // tests with PyO3 should be in bin
   assert_eq!(py_test()?, ());
   assert_eq!(tempita_sub_test()?, ());
   assert_eq!(tempita_substitute_test()?, ());
-*/
   Ok(())
 }
